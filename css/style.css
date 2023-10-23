@@ -57,6 +57,10 @@ div#icons {
     width: 100%;
 }
 
+.hr-line{
+    display: none;
+}
+
 .bar input {
     background-color: #B5B5B5;
     flex: 1;
@@ -546,7 +550,10 @@ main section.brand-icons {
         margin-top: 200px;
     }
     
-
+    .hr-line{
+        display:inline;
+        margin-left: 80px;
+    }
 
     .shoe-container {
         margin-top: 35px;
