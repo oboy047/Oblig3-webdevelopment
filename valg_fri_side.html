@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valg-fri-side</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7b467d2fce.js" crossorigin="anonymous"></script>
+</head>
+
+    <body>
+   
+        <div id="grid-container">
+            <header>
+                <nav>
+                    <div class="search-container">
+                        <a href="forside.html">
+                            <img src="img/footie-store.png" alt="footie-store-logo" id="logo">
+                        </a>
+                        <form action="produktside.html" class="bar">
+                            <div class="search-bar">
+                                <input type="text" placeholder="Search.." name="search" id="search-bar">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="icons">
+                        <i id="ham" class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <ul class="navbar">
+                        <li><a href="forside.html">Home</a></li>
+                        <li><a href="produktside.html">Products</a></li>
+                        <li><a href="valg_fri_side.html">favourites</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                    
+                </nav>
+            </header>
+
+            <main>
+
+                <section class="brand-icons">
+                    <h2 class="hidden">#</h2>
+                    <a href=""><img src="img/nike-logo-493231.png" alt="nike"></a>
+                    <a href=""><img src="img/adidas.png" alt="adidas"></a>
+                    <a href=""><img src="img/puma.png" alt="puma"></a>
+                    <a href=""><img src="img/new-balace.png" alt="new-balace"></a>
+                </section>
+
+                <br><br><br><br>
+
+                <section class="valg">
+                    <h2 class="hidden">#</h2>
+                    <article class="ucl">
+                        <h2 class="hidden">#</h2>
+                        <a href="produktside.html"><img class="Ronaldo" src="img/Nike-shoe-3-v2.png" alt="Cr7"></a>
+                        
+        
+        
+                        <section class="hey">
+                            <h2 class="hidden">#</h2>
+                            <a href="#" class="price-sale">
+                            <img src="img/sale.png" class="red-sale" alt="sale">
+                        </a>
+                        <a href="#" class="price-sale"> 
+                            <img src="img/2000.png" class="red-sale" alt="price">
+                        </a>
+                        </section>
+                    
+                        </article>
+                        
+                    
+                    <section id="buttons-hey">
+                        <h2 class="hidden">#</h2>
+                        <label class="button">
+                            <a class="add-button">Add to <img class="heart" src="img/heart.png" alt="add-to-fav"></a>
+                        </label>
+                        
+                        <label class="button">
+                            <a class="add-button">Add to <img  class="heart" src="img/Cart.png" alt="add-to-cart"></a>
+                        </label>
+        
+                    </section>
+                </section>
+                    
+                
+
+                <div class="shoe-container">
+
+                    <h3 id="size-text">Sizes:</h3>
+                    <article class="shoe-sizes-1">
+                        <h2 class="hidden">#</h2>
+                        <a href="#"><img src="img/38.png" alt="38"></a>
+                        <a href="#"><img src="img/39.png" alt="39"></a>
+                        <a href="#"><img src="img/40.png" alt="40"></a>
+                        <a href="#"><img src="img/41.png" alt="41"></a>
+
+                    </article>
+                    <br><br>
+                    <article class="shoe-sizes-2">
+                        <h2 class="hidden">#</h2>
+                        <a href="#"><img src="img/42.png" alt="42"></a>
+                        <a href="#"><img src="img/43.png" alt="43"></a>
+                        <a href="#"><img src="img/44.png" alt="44"></a>
+                        <a href="#"><img src="img/45.png" alt="45"></a>
+
+                    </article>
+                </div>    
+
+
+            <section class="section-1">
+                <h3 id="color-text">Colors:</h3>
+                <section class="color-choice">
+                    <h2 class="hidden">#</h2>
+                        <a href="#"><img src="img/black.png" alt="black-color"></a>
+                        <a href="#"><img src="img/red.png" alt="red-color"></a>
+                        <a href="#"><img src="img/yellow.png" alt="yellow-color"></a>
+                        <a href="#"><img src="img/pink.png" alt="pink-color"></a>
+                        <a href="#"><img src="img/blue.png" alt="blue-color"></a>
+                </section>
+            </section>
+
+                    
+
+            </main>
+
+            <footer>
+                <section>
+                    <h2>Contact Us</h2>
+                    <p>Email: footie-store@foot.com</p>
+                    <p>Phone: +47 (12) 123 123</p>
+                </section>
+                <section class="link">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="forside.html">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="produktside.html">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </section>
+                <section class="media">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img width="50" src="img/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img width="50" src="img/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img width="50" src="img/instagram.png" alt="Instagram"></a>
+                </section>
+            </footer>
+
+
+            <script>
+                
+                let x = document.querySelector(".navbar")
+                
+                document.getElementById("ham").addEventListener("click", (e) => {
+                    
+                    if (x.className === "navbar") {
+                        
+                        x.className += " responsive";
+                    } else {
+                    
+                        x.className = "navbar"
+                    }
+                })
+            </script>
+
+        </div>
+    </body>
+</html>
