@@ -310,9 +310,67 @@ main section.brand-icons {
     color: white;
 }
 
+#mobile-before{
+    text-align: center;
+    font-weight: 900;
+    font-size: 25px;
+}
 
+.lighthouse ul{
+    list-style: none;
+    
+}
 
+.lighthouse img{
+    width: 100%;
+    border-radius: 30px;
+}
 
+#mobile-before{
+    display: flex;
+    flex-direction: column;
+}
+
+.uu-before img{
+    border-radius: 30px;
+    width: 100%;
+}
+
+#desktop-before{
+    display: flex;
+    flex-direction: column;
+}
+
+.uu-before{
+    display: flex;
+    flex-direction: column;
+}
+
+.uu-before ul{
+    list-style: none;
+}
+
+#desktop-uu{
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+td{
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
 
 @media screen and (min-width: 825px) {
     main {
@@ -559,6 +617,7 @@ main section.brand-icons {
         margin-top: 35px;
         font-size: 30px;
     }
+
 }
 
 
