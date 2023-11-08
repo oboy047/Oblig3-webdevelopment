@@ -50,6 +50,8 @@ div#icons {
     display: none;
 }
 
+
+
 .search-container {
     display: flex;
     align-items: center;
@@ -62,7 +64,7 @@ div#icons {
 }
 
 .bar input {
-    background-color: #B5B5B5;
+    background-color: #D3D3D3;
     flex: 1;
     border-radius: 40px;
     outline: none;
@@ -108,7 +110,7 @@ main ul.leno {
 
 .responsive a {
     color: #fff;
-    background-color: #989090;
+    background-color: #D3D3D3;
     width: 90%;
     margin: 30px;
     border-radius: 20px;
@@ -142,7 +144,7 @@ main article.under-text-neymar {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #D9D9D9;
+    background-color: #D3D3D3;
     border-radius: 15px;
     text-align: center;
     font-weight: 450;
@@ -239,7 +241,7 @@ main section.shoes {
     margin: 10px;
     border-radius: 25px;
     display: inline-block;
-    background-color: #D9D9D9;
+    background-color: #D3D3D3;
     width: 100%;
     text-align: center;
     padding-top: 12px;
@@ -249,6 +251,7 @@ main section.shoes {
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
+    text-decoration: none;
     margin: 2.5px;
 }
 
@@ -308,6 +311,9 @@ main section.brand-icons {
     background-color: #313131;
     border-radius: 15px;
     color: white;
+}
+.searchbar{
+    background-color:#D3D3D3 ;
 }
 
 #mobile-before{
@@ -370,6 +376,35 @@ td{
     border: 1px solid #000;
     padding: 8px;
     text-align: left;
+}
+
+#footer-text li a{
+
+    color: yellow;
+}
+
+#hide{
+    display: none;
+}
+
+#chat img{
+    display: inline-block;
+    border-radius: 30px;
+    width: 100%;
+}
+
+#seo-etter img{
+    display: inline;
+    width: 100%;
+}
+
+.skip-link{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #313131;
+    color: white;
+    
 }
 
 @media screen and (min-width: 825px) {
@@ -520,9 +555,13 @@ td{
     .navbar li a {
         padding: 7px;
         color: #fff;
-        background-color: #B5B5B5;
+        background-color: #404040;
         text-decoration: none;
         border-radius: 5px;
+    }
+
+    nav{
+        background-color: rgb(0, 0, 0);
     }
 
     #ham {

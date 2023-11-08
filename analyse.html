@@ -10,6 +10,9 @@
 </head>
 
 <body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <div id="grid-container">
         <header>
             <nav>
@@ -20,7 +23,8 @@
                     </a>
                     <form action="produktside.html" class="bar">
                         <div class="search-bar">
-                            <input type="text" placeholder="Search.." name="search" id="search-bar">
+                            <label for="search-bar"><p id="hide">search</p></label>
+                            <input type="text" placeholder="Search..." name="search" id="search-bar">
                         </div>
                     </form>
                 </div>
@@ -39,7 +43,7 @@
             </nav>
         </header>
 
-        <main>
+        <main id="main-content">
 
             <section class="google-trends">
                 <h2>Google Trends-nøkkelord</h2>
@@ -91,7 +95,7 @@
             <section>
                 <h2>ChatGPT analyse av koden med hensyn på SEO og UU.</h2>
 
-                <ul>
+                <ul id="chat">
                     <li>Forside<a href="#"><img src="screenshots/Chatgpt/index-chatgpt.png" alt="chatgpt-index"></a></li>
                     <li>Produkt<a href="#"><img src="screenshots/Chatgpt/produkt-chatgpt.png" alt="chatgpt-produkt"></a></li>
                     <li>Fav<a href="#"><img src="screenshots/Chatgpt/fav-chatgpt.png" alt="chatgpt-fav"></a></li>
@@ -130,6 +134,15 @@
                 </table>    
             </section>
 
+            <section>
+                <h2>Endringer på koden for å få høyere score på SEO og UU analysene</h2>
+                <ul id="seo-etter">
+                    <p>jeg hadde 2 endringer som gjorde at SEO scoren gikk fra 82 til 90+</p>
+                    <li><p>Ved å slette linkene i footer, og ved å linke Brand-ikonene til en av de tilpassende sidene.</p>
+                    <img src="/Screenshots/SEO-After/Screenshot 2023-11-08 at 01.59.52.png" alt="seo-oppdatering"></li>
+                </ul>
+            </section>
+
         </main>
 
         <footer>
@@ -138,14 +151,7 @@
                 <p>Email: footie-store@foot.com</p>
                 <p>Phone: +47 (12) 123 123</p>
             </section>
-            <section class="link">
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produktside.html">Products</a></li>
-                    <li><a href="valg_fri_side.html">favourites</a></li>
-                    <li><a href="analyse.html">analyse</a></li>
-                </ul>
+
             </section>
             <section class="media">
                 <h2>Follow Us</h2>

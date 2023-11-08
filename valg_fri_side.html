@@ -12,6 +12,8 @@
 </head>
 
     <body>
+
+        <a href="#main-content" class="skip-link">Skip to main content</a>
    
         <div id="grid-container">
             <header>
@@ -22,7 +24,8 @@
                         </a>
                         <form action="produktside.html" class="bar">
                             <div class="search-bar">
-                                <input type="text" placeholder="Search.." name="search" id="search-bar">
+                                <label for="search-bar"><p id="hide">search</p></label>
+                                <input type="text" placeholder="Search..." name="search" id="search-bar">
                             </div>
                         </form>
                     </div>
@@ -41,14 +44,14 @@
                 </nav>
             </header>
 
-            <main>
+            <main id="main-content">
 
                 <section class="brand-icons">
                     <h2 class="hidden">#</h2>
-                    <a href=""><img src="img/nike-logo-493231.png" alt="nike"></a>
-                    <a href=""><img src="img/adidas.png" alt="adidas"></a>
-                    <a href=""><img src="img/puma.png" alt="puma"></a>
-                    <a href=""><img src="img/new-balace.png" alt="new-balace"></a>
+                    <a href="produktside.html"><img src="img/nike-logo-493231.png" alt="nike"></a>
+                    <a href="produktside.html"><img src="img/adidas.png" alt="adidas"></a>
+                    <a href="produktside.html"><img src="img/puma.png" alt="puma"></a>
+                    <a href="produktside.html"><img src="img/new-balace.png" alt="new-balace"></a>
                 </section>
 
                 <br><br><br><br>
@@ -77,11 +80,11 @@
                     <section id="buttons-hey">
                         <h2 class="hidden">#</h2>
                         <label class="button">
-                            <a class="add-button">Add to <img class="heart" src="img/heart.png" alt="add-to-fav"></a>
+                            <a href="valg_fri_side.html" class="add-button">Add to <img class="heart" src="img/heart.png" alt="add-to-fav"></a>
                         </label>
                         
                         <label class="button">
-                            <a class="add-button">Add to <img  class="heart" src="img/Cart.png" alt="add-to-cart"></a>
+                            <a href="produktside.html" class="add-button">Add to <img  class="heart" src="img/Cart.png" alt="add-to-cart"></a>
                         </label>
         
                     </section>
@@ -134,14 +137,7 @@
                     <p>Email: footie-store@foot.com</p>
                     <p>Phone: +47 (12) 123 123</p>
                 </section>
-                <section class="link">
-                    <h2>Links</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="produktside.html">Products</a></li>
-                        <li><a href="valg_fri_side.html">favourites</a></li>
-                        <li><a href="analyse.html">analyse</a></li>
-                    </ul>
+
                 </section>
                 <section class="media">
                     <h2>Follow Us</h2>
