@@ -393,6 +393,11 @@ td{
     width: 100%;
 }
 
+#chat{
+    list-style: none;
+    width: 100%;
+}
+
 #seo-etter img{
     display: inline;
     width: 100%;
@@ -405,6 +410,19 @@ td{
     background-color: #313131;
     color: white;
     
+}
+
+.filter-section label {
+    position: absolute;
+    left: -9999px;
+}
+
+#hidden-h1{
+    display: none;
+}
+
+.product{
+    display: none;
 }
 
 @media screen and (min-width: 825px) {
@@ -559,6 +577,7 @@ td{
         text-decoration: none;
         border-radius: 5px;
     }
+
 
     nav{
         background-color: rgb(0, 0, 0);

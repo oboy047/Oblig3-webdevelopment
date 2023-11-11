@@ -7,34 +7,54 @@
     <title>produktside</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/7b467d2fce.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Welcome to Footie-Store">
+
+       <!-- Facebook Meta Tags -->
+
+       <meta property="og:title" content="Footie Store">
+       <meta property="og:description" content="Welcome to Footie Store - Welcome to Footie Store - Best Place For Football Boots.">
+       <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png">
+       <meta property="og:url" content="https://itstud.hiof.no/~iztaha/produktside.html">
+       <meta property="og:type" content="website">
+   
+       <!-- Instagram Meta Tags -->
+       <meta property="og:site_name" content="Footie Store">
+       <meta property="og:title" content="Footie Store">
+       <meta property="og:description" content="Welcome to Footie Store - Best Place For Football Boots.">
+       <meta property="og:image" content="https://w7.pngwing.com/pngs/722/1011/png-transparent-logo-icon-instagram-logo-instagram-logo-purple-violet-text.png">
+       <meta property="og:url" content="https://itstud.hiof.no/~iztaha/produktside.html">
+       <meta property="og:type" content="website">
+
     <!--alle bilder brukt er fra figma(Oblig2) oppgaven, så alt er referert til der. Alt er fra tre nettsider,
     https://www.pngmart.com/ og https://imgbin.com/  https://www.pngitem.com-->
 </head>
 
+
 <body>
 
+    <h1 id="hidden-h1">product-site</h1> 
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <div id="grid-container">
         <header>
-            <nav>
+            <nav aria-label="Site Navigation">
                 <div class="search-container">
-                    <a href="index.html">
+                    <a href="#">
                         <img src="img/footie-store.png" alt="footie-store-logo" id="logo">
                     </a>
-                    <form action="produktside.html" class="bar">
+                    <form action="produktside.html" class="bar" role="search">
                         <div class="search-bar">
-                            <label for="search-bar"><p id="hide">search</p></label>
-                            <input type="text" placeholder="Search..." name="search" id="search-bar">
+                            <label id="hide" for="search-bar">search</label>
+                            <input type="text" placeholder="Search..." name="search" id="search-bar" aria-label="Search for products">
                         </div>
                     </form>
                 </div>
 
-                <div id="icons">
+                <div id="icons" role="button" aria-label="Toggle Navigation">
                     <i id="ham" class="fa-solid fa-bars"></i>
                 </div>
 
-                <ul class="navbar">
+                <ul class="navbar" aria-label="Main Navigation" >
                     <li><a href="index.html">Home</a></li>
                     <li><a href="produktside.html">Products</a></li>
                     <li><a href="valg_fri_side.html">favourites</a></li>
@@ -58,25 +78,28 @@
 
                  <section class="brand-icons">
                     <h2 class="hidden">#</h2>
-                    <a href="produktside.html"><img src="img/nike-logo-493231.png" alt="nike"></a>
-                    <a href="produktside.html"><img src="img/adidas.png" alt="adidas"></a>
-                    <a href="produktside.html"><img src="img/puma.png" alt="puma"></a>
-                    <a href="produktside.html"><img src="img/new-balace.png" alt="new-balace"></a>
+                    <a href="#"><img src="img/nike-logo-493231.png" alt="nike"></a>
+                    <a href="#"><img src="img/adidas.png" alt="adidas"></a>
+                    <a href="#"><img src="img/puma.png" alt="puma"></a>
+                    <a href="#"><img src="img/new-balace.png" alt="new-balace"></a>
                 </section>
             <br><br>
             <div class="innhold">
+                
                 <section class="filter-section">
                     <h2 class="hidden">#</h2>
-                    <form id="filter" method="post" action="#">
+                    <form id="filter-version" method="post" action="#">
+                        <label for="version">Version:</label>
                         <select name="for" id="version">
                             <option value="adult">Adult</option>
                             <option value="kids">Kids</option>
                         </select>
                     </form>
-
+                
                     <form class="filter" method="post" action="#">
+                        <label for="size">Select Size:</label>
                         <select name="for" id="size">
-                            <option value="38">Size</option>
+                            <option value="">Size</option>
                             <option value="39">39</option>
                             <option value="40">40</option>
                             <option value="41">41</option>
@@ -88,20 +111,22 @@
                             <option value="47">47</option>
                         </select>
                     </form>
-
+                
                     <form class="filter" method="post" action="#">
+                        <label for="the-brand">Select Brand:</label>
                         <select name="for" id="the-brand">
-                            <option value="brand">Brand</option>
+                            <option value="">Brand</option>
                             <option value="nike">Nike</option>
-                            <option value="adias">Adidas</option>
+                            <option value="adidas">Adidas</option>
                             <option value="puma">Puma</option>
                             <option value="new balance">New Balance</option>
                         </select>
                     </form>
-
+                
                     <form class="filter" method="post" action="#">
+                        <label for="color-id">Select Color:</label>
                         <select name="for" id="color-id">
-                            <option value="color">Color</option>
+                            <option value="">Color</option>
                             <option value="black">Black</option>
                             <option value="red">Red</option>
                             <option value="yellow">Yellow</option>
@@ -109,7 +134,6 @@
                             <option value="blue">Blue</option>
                         </select>
                     </form>
-
                 </section>
 
                 <hr class="hr-line">
@@ -122,37 +146,213 @@
                         
                         
                         <h2 class="hidden">#</h2>
-                        <a href="produktside.html"><img id="nike-1" src="img/Nike-shoe-1.png" alt="nike-shoe-nr1" ></a>
+                        <a href="#"><img id="nike-1" src="img/Nike-shoe-1.png" alt="nike-shoe-nr1" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">Nike Shoe 1</h2>
+                            <img itemprop="image" src="img/Nike-shoe-1.png" alt="Nike Shoe 1">
+                            <p itemprop="description">Description of Nike Shoe 1.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">Nike Phantom Ag</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">1599</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
                         
                         <a href="valg_fri_side.html"><img src="img/Nike-shoe-2.png" alt="nike-shoe-nr2" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">Nike Shoe 2</h2>
+                            <img itemprop="image" src="img/Nike-shoe-1.png" alt="Nike-Shoe-2">
+                            <p itemprop="description">Description of Nike Shoe 1.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">Nike CR7 UCL</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">2499</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
                         
-                        <a href="produktside.html"><img src="img/Nike-shoe-3.png" alt="nike-shoe-nr3" ></a>
+                        <a href="#"><img src="img/Nike-shoe-3.png" alt="nike-shoe-nr3" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">Nike Shoe 3</h2>
+                            <img itemprop="image" src="img/Nike-shoe-1.png" alt="Nike-Shoe-3">
+                            <p itemprop="description">Description of Nike Shoe 1.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">Nike Mercurial Ag</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">1900</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
+
 
                     </section>
                     <br><br><br><br><br>
                     <section class="shoes">
                         <h2 class="hidden">#</h2>
-                        <a href="produktside.html"><img src="img/Adidas-shoe-1.png" alt="adidas-shoe-nr1" ></a>
-                        <a href="produktside.html"><img src="img/Adidas-shoe-2.png" alt="adidas-shoe-nr2" ></a>
-                        <a href="produktside.html"><img src="img/Adidas-Shoe-3.png" alt="adidas-shoe-nr3" ></a>
+                        <a href="#"><img src="img/Adidas-shoe-1.png" alt="adidas-shoe-nr1" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">Adidas shoe 1</h2>
+                            <img itemprop="image" src="img/Adidas-shoe-1.png" alt="adidas-shoe-nr1">
+                            <p itemprop="description">Description of Adidas-shoe-1.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">Adidas Messi Speed Flow</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">1399</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
+
+
+                        <a href="#"><img src="img/Adidas-shoe-2.png" alt="adidas-shoe-nr2" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">Adidas shoe 2</h2>
+                            <img itemprop="image" src="img/Adidas-shoe-2.png" alt="adidas-shoe-nr2">
+                            <p itemprop="description">Description of Adidas-shoe-2.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">Adidas X Cameo</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">2299</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
+
+                        <a href="#"><img src="img/Adidas-Shoe-3.png" alt="adidas-shoe-nr3" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">Adidas shoe 3</h2>
+                            <img itemprop="image" src="img/Adidas-Shoe-3.png" alt="adidas-shoe-nr3">
+                            <p itemprop="description">Description of Adidas-shoe-3.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">Adidas Copa 10</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">2499</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
+
                     </section>
                     <br><br><br><br><br>
                     <section class="shoes">
                         <h2 class="hidden">#</h2>
                         
                         
-                        <a href="produktside.html"><img src="img/Puma-shoe-1.png" alt="puma-shoe-nr1" ></a>
-                        <a href="produktside.html"><img src="img/Puma-shoe-2.png" alt="puma-shoe-nr2" ></a>
-                        <a href="produktside.html"><img src="img/Puma-Shoe-3.png" alt="puma-shoe-nr3" ></a>
+                        <a href="#"><img src="img/Puma-shoe-1.png" alt="puma-shoe-nr1" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">Puma Shoe 1</h2>
+                            <img itemprop="image" src=".img/Puma-shoe-1.png" alt="puma-shoe-nr1">
+                            <p itemprop="description">Description of Puma-Shoe-nr1.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">Puma Max Performance</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">1650</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
+
+                        <a href="#"><img src="img/Puma-shoe-2.png" alt="puma-shoe-nr2" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">Puma Shoe 2</h2>
+                            <img itemprop="image" src=".img/Puma-shoe-2.png" alt="puma-shoe-nr2">
+                            <p itemprop="description">Description of Puma-Shoe-nr2.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">Puma Special Ed</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">1999</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
+
+                        <a href="#"><img src="img/Puma-Shoe-3.png" alt="puma-shoe-nr3" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">Puma Shoe 3</h2>
+                            <img itemprop="image" src=".img/Puma-Shoe-3.png" alt="puma-shoe-nr3">
+                            <p itemprop="description">Description of Puma-Shoe-nr3.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">Puma Speed X</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">2399</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
+
                     </section>
                     <br><br><br><br><br>
                     <section class="shoes" id="new-balance-shoes">
                         <h2 class="hidden">#</h2>
-                        <a href="produktside.html"><img class="new-balance-1" src="img/New-Balance-Shoe-1.png" alt="newbalance-shoe-nr1" ></a>
+                        <a href="#"><img class="new-balance-1" src="img/New-Balance-Shoe-1.png" alt="newbalance-shoe-nr1" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">New Balance Shoe 1</h2>
+                            <img itemprop="image" src="img/New-Balance-Shoe-1.png" alt="newbalance-shoe-nr1">
+                            <p itemprop="description">Description of New Balance Shoe 1.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">NewBalance 22</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">999</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
                         
-                        <a href="produktside.html"><img src="img/New-balance-Shoe-2.png " alt="newbalance-shoe-nr2" ></a>
+                        <a href="#"><img src="img/New-balance-Shoe-2.png " alt="newbalance-shoe-nr2" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">New Balance Shoe 2</h2>
+                            <img itemprop="image" src="img/New-balance-Shoe-2.png" alt="newbalance-shoe-nr2">
+                            <p itemprop="description">Description of New Balance Shoe 2.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">NewBalance 23</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">1299</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
                         
-                        <a href="produktside.html"><img src="img/New-Balance-Shoe-3.png" alt="newbalance-shoe-nr3" ></a>
+                        <a href="#"><img src="img/New-Balance-Shoe-3.png" alt="newbalance-shoe-nr3" ></a>
+
+                        <div itemscope itemtype="http://schema.org/Product" class="product">
+                            <h2 itemprop="name">New Balance Shoe 3</h2>
+                            <img itemprop="image" src="img/New-Balance-Shoe-3.png" alt="newbalance-shoe-nr3">
+                            <p itemprop="description">Description of New Balance Shoe 3.</p>
+                            <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                <span itemprop="name">NewBalance Classic</span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">3199</span>
+                                <meta itemprop="priceCurrency" content="NOK">
+                                <link itemprop="availability" href="http://schema.org/InStock">
+                            </div>
+                        </div>
                         
                     </section>
                     <br><br><br><br><br>

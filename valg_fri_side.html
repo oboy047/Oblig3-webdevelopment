@@ -7,25 +7,45 @@
     <title>valg-fri-side</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/7b467d2fce.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Welcome to Footie-Store">
+
+       <!-- Facebook Meta Tags -->
+
+       <meta property="og:title" content="Footie Store">
+       <meta property="og:description" content="Welcome to Footie Store - Welcome to Footie Store - Best Place For Football Boots.">
+       <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png">
+       <meta property="og:url" content="https://itstud.hiof.no/~iztaha/valg_fri_side.html">
+       <meta property="og:type" content="website">
+   
+       <!-- Instagram Meta Tags -->
+       <meta property="og:site_name" content="Footie Store">
+       <meta property="og:title" content="Footie Store">
+       <meta property="og:description" content="Welcome to Footie Store - Best Place For Football Boots.">
+       <meta property="og:image" content="https://w7.pngwing.com/pngs/722/1011/png-transparent-logo-icon-instagram-logo-instagram-logo-purple-violet-text.png">
+       <meta property="og:url" content="https://itstud.hiof.no/~iztaha/valg_fri_side.html">
+       <meta property="og:type" content="website">
+
     <!--alle bilder brukt er fra figma(Oblig2) oppgaven, så alt er referert til der. alt er fra to nettsider,
     https://www.pngmart.com/ og https://imgbin.com/  https://www.pngitem.com-->
 </head>
 
     <body>
 
+        <h1 id="hidden-h1">shopping</h1>
+
         <a href="#main-content" class="skip-link">Skip to main content</a>
    
         <div id="grid-container">
             <header>
-                <nav>
+                <nav aria-label="Site Navigation">
                     <div class="search-container">
-                        <a href="index.html">
+                        <a href="#">
                             <img src="img/footie-store.png" alt="footie-store-logo" id="logo">
                         </a>
-                        <form action="produktside.html" class="bar">
+                        <form action="produktside.html" class="bar" role="search">
                             <div class="search-bar">
-                                <label for="search-bar"><p id="hide">search</p></label>
-                                <input type="text" placeholder="Search..." name="search" id="search-bar">
+                                <label id="hide" for="search-bar">search</label>
+                                <input type="text" placeholder="Search..." name="search" id="search-bar" aria-label="Search for products">
                             </div>
                         </form>
                     </div>
@@ -48,10 +68,10 @@
 
                 <section class="brand-icons">
                     <h2 class="hidden">#</h2>
-                    <a href="produktside.html"><img src="img/nike-logo-493231.png" alt="nike"></a>
-                    <a href="produktside.html"><img src="img/adidas.png" alt="adidas"></a>
-                    <a href="produktside.html"><img src="img/puma.png" alt="puma"></a>
-                    <a href="produktside.html"><img src="img/new-balace.png" alt="new-balace"></a>
+                    <a href="#"><img src="img/nike-logo-493231.png" alt="nike"></a>
+                    <a href="#"><img src="img/adidas.png" alt="adidas"></a>
+                    <a href="#"><img src="img/puma.png" alt="puma"></a>
+                    <a href="#"><img src="img/new-balace.png" alt="new-balace"></a>
                 </section>
 
                 <br><br><br><br>
@@ -60,7 +80,7 @@
                     <h2 class="hidden">#</h2>
                     <article class="ucl">
                         <h2 class="hidden">#</h2>
-                        <a href="produktside.html"><img class="Ronaldo" src="img/Nike-fav.png" alt="Cr7"></a>
+                        <a href="#"><img class="Ronaldo" src="img/Nike-fav.png" alt="Cr7"></a>
                         
         
         
@@ -77,17 +97,16 @@
                         </article>
                         
                     
-                    <section id="buttons-hey">
-                        <h2 class="hidden">#</h2>
-                        <label class="button">
-                            <a href="valg_fri_side.html" class="add-button">Add to <img class="heart" src="img/heart.png" alt="add-to-fav"></a>
-                        </label>
+                        <section id="buttons-hey">
+                            <h2 class="hidden">#</h2>
+                            <a href="valg_fri_side.html" class="button add-button">
+                                Add to <img class="heart" src="img/heart.png" alt="add-to-fav">
+                            </a>
                         
-                        <label class="button">
-                            <a href="produktside.html" class="add-button">Add to <img  class="heart" src="img/Cart.png" alt="add-to-cart"></a>
-                        </label>
-        
-                    </section>
+                            <a href="produktside.html" class="button add-button">
+                                Add to <img class="heart" src="img/Cart.png" alt="add-to-cart">
+                            </a>
+                        </section>
                 </section>
                     
                 
@@ -138,7 +157,6 @@
                     <p>Phone: +47 (12) 123 123</p>
                 </section>
 
-                </section>
                 <section class="media">
                     <h2>Follow Us</h2>
                     <a href="#"><img width="50" src="img/facebook.png" alt="Facebook"></a>

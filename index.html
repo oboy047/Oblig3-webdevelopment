@@ -7,22 +7,43 @@
     <title>forside</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/7b467d2fce.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Welcome to Footie-Store">
+
+    <!-- Facebook Meta Tags -->
+
+    <meta property="og:title" content="Footie Store">
+    <meta property="og:description" content="Welcome to Footie Store - Welcome to Footie Store - Best Place For Football Boots.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png">
+    <meta property="og:url" content="https://itstud.hiof.no/~iztaha/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Instagram Meta Tags -->
+    <meta property="og:site_name" content="Footie Store">
+    <meta property="og:title" content="Footie Store">
+    <meta property="og:description" content="Welcome to Footie Store - Best Place For Football Boots.">
+    <meta property="og:image" content="https://w7.pngwing.com/pngs/722/1011/png-transparent-logo-icon-instagram-logo-instagram-logo-purple-violet-text.png">
+    <meta property="og:url" content="https://itstud.hiof.no/~iztaha/index.html">
+    <meta property="og:type" content="website">
+
     <!--alle bilder brukt er fra figma(Oblig2) oppgaven, så alt er referert til der. alt er fra to nettsider,
     https://www.pngmart.com/ og https://imgbin.com/  https://www.pngitem.com-->
 </head>
 
 <body>
+
+    <h1 id="hidden-h1">footie-store-main-page</h1>
+
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <div id="grid-container">
         <header>
-            <nav>
+            <nav aria-label="Site Navigation">
                 <div class="search-container">
 
-                    <a href="index.html">
+                    <a href="#">
                         <img src="img/footie-store.png" alt="footie-store-logo" id="logo">
                     </a>
-                    <form action="produktside.html" class="bar">
+                    <form action="produktside.html" class="bar" role="search">
                         <div class="search-bar">
                             <label id="hide" for="search-bar">search</label>
                             <input type="text" placeholder="Search..." name="search" id="search-bar" aria-label="Search for products">
@@ -30,12 +51,12 @@
                     </form>
                 </div>
 
-                <div id="icons">
-                    <i id="ham" class="fa-solid fa-bars" aria-label="Open menu"></i>
+                <div id="icons" role="button" aria-label="Toggle Navigation">
+                    <i id="ham" class="fa-solid fa-bars"></i>
                 </div>
 
-                <ul class="navbar" role="navigation">
-                    <li><a href="index.html">Home</a></li>
+                <ul class="navbar" aria-label="Main Navigation">
+                    <li><a href="#">Home</a></li>
                     <li><a href="produktside.html">Products</a></li>
                     <li><a href="valg_fri_side.html">Favorites</a></li>
                     <li><a href="analyse.html">Analysis</a></li>
@@ -49,15 +70,15 @@
             <section class="brand-icons">
                 <h2 class="hidden">#</h2>
                 <a href="produktside.html"><img src="img/nike-logo-493231.png" alt="nike-shoe-brand"></a>
-                <a href="produktside.html"><img src="img/adidas.png" alt="adidas"></a>
-                <a href="produktside.html"><img src="img/puma.png" alt="puma"></a>
-                <a href="produktside.html"><img src="img/new-balace.png" alt="new-balace"></a>
+                <a href="#"><img src="img/adidas.png" alt="adidas"></a>
+                <a href="#"><img src="img/puma.png" alt="puma"></a>
+                <a href="#"><img src="img/new-balace.png" alt="new-balace"></a>
             </section>
             
             <br><br>
             <article class="flex-section">
                 <h2 class="hidden">#</h2>
-                <a href="produktside.html"><img class="Ronaldo" src="img/Mercurial.png" alt="Cr7"></a>
+                <a href="#"><img class="Ronaldo" src="img/Mercurial.png" alt="Cr7"></a>
                 <article class="under-text-cr7" aria-labelledby="nike-superfly-heading">
                     <h2 id="nike-superfly-heading">Nike Superfly</h2>
                     <p>Cristiano Ronaldo's Red Superfly Mercurials - The epitome of speed and precision. Engineered for agility and power, these boots are your key to dominating the game, just like Ronaldo.</p>
@@ -65,7 +86,7 @@
             </article>
             <article class="flex-section">
                 <h2 class="hidden">#</h2>
-                <a href="produktside.html"><img src="img/Summer-collection.png" alt="Summer"></a>
+                <a href="#"><img src="img/Summer-collection.png" alt="Summer"></a>
                 <article class="under-text-summer" aria-labelledby="summer-collection-heading">
                     <h2 id="summer-collection-heading">Summer Collection</h2>
                     <p>Introducing our exciting new summer collection of football boots! Get ready for stylish, lightweight designs that keep you cool on the pitch. Elevate your game in the hottest season.</p>
@@ -73,7 +94,7 @@
             </article>
             <article class="flex-section">
                 <h2 class="hidden">#</h2>
-                <a href="produktside.html"><img src="img/Neymar.png" alt="Neymar"></a>
+                <a href="#"><img src="img/Neymar.png" alt="Neymar"></a>
                 <article class="under-text-neymar" aria-labelledby="neymar-jr-heading">
                     <h2 id="neymar-jr-heading">Neymar Jr</h2>
                     <p>Neymar Jr's White Puma Football Boots are a fusion of style and agility. These boots offer the perfect blend of comfort and control, allowing you to play like a true maestro on the pitch.</p>
